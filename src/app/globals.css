@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7c3aed;
+  --color-input: #52525b;
+  --color-background: #ffffff;
+  --color-ring: #7c3aed;
+  --color-ring-offset: #09090b;
+  /* tooltip / popover */
+  --color-popover: #18181b;
+  --color-popover-foreground: #fafafa;
+  --color-border: rgba(255, 255, 255, 0.12);
+  /* font — next/font/google sets --font-base on <html> via font.variable */
+  --font-sans: var(--font-base, ui-sans-serif, system-ui, sans-serif);
+}
+
+:root {
+  --bg-from: #0f0a2e;
+  --bg-via: #1a0a3e;
+  --bg-to: #0a1a2e;
+  --accent: #7c3aed;
+  --beam-color: #8b5cf6;
+  --particle-color: #a78bfa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-base, ui-sans-serif, system-ui, sans-serif);
+  background: linear-gradient(
+    var(--bg-angle, 135deg),
+    var(--bg-from) 0%,
+    var(--bg-via) 50%,
+    var(--bg-to) 100%
+  );
+  color: #ffffff;
+  min-height: 100dvh;
+}
