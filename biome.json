@@ -1,0 +1,42 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "correctness": { "noUnusedVariables": "error" },
+      "suspicious": { "noExplicitAny": "error" },
+      "style": {
+        "useConst": "error",
+        "useTemplate": "error",
+        "noNonNullAssertion": "warn"
+      },
+      "performance": {
+        "noImgElement": "off"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingCommas": "all",
+      "semicolons": "asNeeded"
+    }
+  },
+  "files": {
+    "includes": ["**", "!**/.next", "!**/node_modules", "!**/dist", "!**/*.config.js", "!**/*.css"]
+  },
+  "overrides": [
+    {
+      "includes": ["src/app/layout.tsx"],
+      "linter": { "rules": { "security": { "noDangerouslySetInnerHtml": "off" } } }
+    }
+  ]
+}
