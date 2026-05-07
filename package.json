@@ -1,0 +1,83 @@
+{
+  "name": "@germondai/links",
+  "version": "1.0.0",
+  "description": "Self-hostable personal link page — a high-performance FOSS alternative to Linktree, configured from a single TypeScript file",
+  "license": "AGPL-3.0-or-later",
+  "author": {
+    "name": "germondai",
+    "url": "https://github.com/germondai"
+  },
+  "homepage": "https://github.com/germondai/links#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/germondai/links.git"
+  },
+  "bugs": {
+    "url": "https://github.com/germondai/links/issues"
+  },
+  "keywords": [
+    "linktree",
+    "link-in-bio",
+    "personal-page",
+    "self-hosted",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "foss",
+    "open-source",
+    "ssg",
+    "pwa"
+  ],
+  "engines": {
+    "bun": ">=1.1.0"
+  },
+  "scripts": {
+    "icons": "bun scripts/generate-icons.ts",
+    "dev": "next dev --turbopack",
+    "prebuild": "bun scripts/generate-icons.ts && bun scripts/generate-font.ts",
+    "build": "next build",
+    "postbuild": "bun scripts/extract-og.ts",
+    "start": "next start",
+    "lint": "biome lint ./src",
+    "lint:fix": "biome lint --write ./src",
+    "format": "biome format ./src",
+    "format:write": "biome format --write ./src",
+    "check": "biome check ./src",
+    "check:write": "biome check --write ./src",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "test:coverage": "bun test --coverage",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@radix-ui/react-separator": "^1.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-switch": "^1.2.6",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.17.0",
+    "next": "^16.2.6",
+    "next-themes": "^0.4.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwind-merge": "^3.6.0",
+    "takumi-js": "^1.6.0",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.16",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "bun-types": "^1.3.14",
+    "husky": "^9.1.7",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3"
+  },
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ]
+}
