@@ -1,0 +1,9 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "bun run build",
+  "installCommand": "bun install --frozen-lockfile",
+  "devCommand": "bun dev --turbopack",
+  "env": {
+    "NEXT_TELEMETRY_DISABLED": "1"
+  }
+}
