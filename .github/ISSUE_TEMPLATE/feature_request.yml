@@ -1,0 +1,42 @@
+name: Feature Request
+description: Propose a new feature for @germondai/links
+labels: [enhancement]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Feature title
+      description: A short description of the proposed feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem description
+      description: What problem does this feature solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe how you'd like this to work
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative approaches you've thought about?
+
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Are you willing to open a PR for this?
+      options:
+        - "Yes"
+        - "No"
+        - "Maybe"
