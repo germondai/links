@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
-// Copyright (C) 2025 germondai — https://github.com/germondai
+// Copyright (C) 2025 germondai - https://github.com/germondai
 
 // prebuild: downloads avatar (or generates a themed circle) → 4 WebP icon sizes
 // run manually: bun scripts/generate-icons.ts
@@ -44,5 +44,5 @@ const run = async () => {
 
 run().catch((err) => {
   console.error('⚠️  Icon generation failed:', err.message)
-  console.error('   Skipping — existing icons will be used.')
+  console.error('   Skipping - existing icons will be used.')
 })
