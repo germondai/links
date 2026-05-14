@@ -1,7 +1,7 @@
 {
   "name": "@germondai/links",
   "version": "1.0.0",
-  "description": "Self-hostable personal link page — a high-performance FOSS alternative to Linktree, configured from a single TypeScript file",
+  "description": "Self-hostable personal link page - a high-performance FOSS alternative to Linktree, configured from a single TypeScript file",
   "license": "AGPL-3.0-or-later",
   "author": {
     "name": "germondai",

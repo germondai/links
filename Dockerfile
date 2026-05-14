@@ -25,7 +25,7 @@ RUN bun --bun run build
 FROM base AS release
 
 LABEL org.opencontainers.image.title="@germondai/links" \
-      org.opencontainers.image.description="Self-hostable personal link page — FOSS Linktree alternative" \
+      org.opencontainers.image.description="Self-hostable personal link page - FOSS Linktree alternative" \
       org.opencontainers.image.url="https://github.com/germondai/links" \
       org.opencontainers.image.source="https://github.com/germondai/links" \
       org.opencontainers.image.licenses="AGPL-3.0-or-later"
