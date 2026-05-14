@@ -34,19 +34,21 @@ const config: NextConfig = {
           { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' },
         ],
       },
-      // Cache headers only in production — Next.js dev server handles caching itself
-      ...(isProd ? [
-        {
-          source: '/_next/static/(.*)',
-          headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
-        },
-        {
-          source: '/:path(favicon\\.ico|og\\.webp|icon\\.webp|icon-.*\\.webp|apple-touch-icon\\.webp)',
-          headers: [
-            { key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' },
-          ],
-        },
-      ] : []),
+      // Cache public icons - Next.js handles /_next/static/ automatically
+      ...(isProd
+        ? [
+            {
+              source:
+                '/:path(favicon\\.ico|og\\.webp|icon\\.webp|icon-.*\\.webp|apple-touch-icon\\.webp)',
+              headers: [
+                {
+                  key: 'Cache-Control',
+                  value: 'public, max-age=86400, stale-while-revalidate=604800',
+                },
+              ],
+            },
+          ]
+        : []),
     ]
   },
 }
