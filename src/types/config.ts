@@ -2,7 +2,7 @@
 // Copyright (C) 2025 germondai - https://github.com/germondai
 
 export type FontName =
-  // sans-serif — geometric / grotesque
+  // sans-serif - geometric / grotesque
   | 'Inter'
   | 'Geist'
   | 'Roboto'
@@ -10,7 +10,7 @@ export type FontName =
   | 'Urbanist'
   | 'Hanken_Grotesk'
   | 'Bricolage_Grotesque'
-  // sans-serif — humanist / friendly
+  // sans-serif - humanist / friendly
   | 'Poppins'
   | 'Nunito'
   | 'Nunito_Sans'
@@ -24,13 +24,13 @@ export type FontName =
   | 'Josefin_Sans'
   | 'Figtree'
   | 'Manrope'
-  // sans-serif — professional / neutral
+  // sans-serif - professional / neutral
   | 'DM_Sans'
   | 'Outfit'
   | 'Plus_Jakarta_Sans'
   | 'Rubik'
   | 'Lexend'
-  // sans-serif — techy / display sans
+  // sans-serif - techy / display sans
   | 'Space_Grotesk'
   | 'Syne'
   | 'Barlow'
@@ -129,7 +129,7 @@ export interface Link {
   description?: string
   style?: LinkStyle
   enabled?: boolean
-  // optional short-URL slug — yourdomain.com/slug → this link's URL
+  // optional short-URL slug - yourdomain.com/slug → this link's URL
   // lowercase letters, numbers and hyphens only
   slug?: string
 }

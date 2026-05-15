@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 // Copyright (C) 2025 germondai - https://github.com/germondai
 
-// client-safe — no next/font imports (used by DevPanel for live font picker)
+// client-safe - no next/font imports (used by DevPanel for live font picker)
 import type { FontName } from '@/types/config'
 
 export const FONT_FAMILY: Record<FontName, string> = {
