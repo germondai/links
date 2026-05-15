@@ -3,7 +3,7 @@
 
 import type { Link, SocialLink } from '@/types/config'
 
-// email excluded — mailto: can't be an HTTP redirect target
+// email excluded - mailto: can't be an HTTP redirect target
 export const resolveSocialSlug = (slug: string, socials: SocialLink[]): string | null =>
   socials.find((s) => s.platform !== 'email' && s.platform === slug)?.url ?? null
 

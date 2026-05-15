@@ -2,7 +2,7 @@
 // Copyright (C) 2025 germondai - https://github.com/germondai
 
 // strips first subdomain: links.example.com → https://example.com
-// note: .co.uk / .com.au TLDs will strip incorrectly — set mainSiteUrl explicitly
+// note: .co.uk / .com.au TLDs will strip incorrectly - set mainSiteUrl explicitly
 export const deriveMainDomain = (url: string): string | null => {
   try {
     const { protocol, hostname } = new URL(url)
