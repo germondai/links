@@ -2,9 +2,9 @@
 // Copyright (C) 2025 germondai - https://github.com/germondai
 
 import { ImageResponse } from 'takumi-js/response'
-import config from '../../links.config'
 import { THEMES } from '@/lib/themes'
 import type { Theme } from '@/types/config'
+import config from '../../links.config'
 
 export const runtime = 'nodejs'
 export const size = { width: 1200, height: 630 }

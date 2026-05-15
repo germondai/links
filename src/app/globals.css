@@ -10,7 +10,7 @@
   --color-popover: #18181b;
   --color-popover-foreground: #fafafa;
   --color-border: rgba(255, 255, 255, 0.12);
-  /* font — next/font/google sets --font-base on <html> via font.variable */
+  /* font - next/font/google sets --font-base on <html> via font.variable */
   --font-sans: var(--font-base, ui-sans-serif, system-ui, sans-serif);
 }
 
