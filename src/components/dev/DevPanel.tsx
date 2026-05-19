@@ -208,7 +208,7 @@ const LinkCard = ({ link, onUpdate, onRemove }: LinkCardProps) => {
       />
       <input
         className={INPUT}
-        placeholder="slug (optional) — yourdomain.com/slug → this link"
+        placeholder="slug (optional) - yourdomain.com/slug → this link"
         value={link.slug ?? ''}
         onChange={(e) => {
           // sanitise: lowercase, alphanumeric + hyphens only
