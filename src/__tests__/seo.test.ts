@@ -29,7 +29,7 @@ describe('deriveMainDomain', () => {
     expect(deriveMainDomain('https://links.germondai.com/')).toBe('https://germondai.com')
   })
 
-  it('handles deep subdomains — strips only one level', () => {
+  it('handles deep subdomains - strips only one level', () => {
     // links.staging.germondai.com → staging.germondai.com (last two parts)
     expect(deriveMainDomain('https://links.staging.germondai.com')).toBe('https://germondai.com')
   })

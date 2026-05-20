@@ -2,8 +2,8 @@
 // Copyright (C) 2025 germondai - https://github.com/germondai
 
 import { describe, expect, it } from 'bun:test'
-import { buildFontContent, WEIGHTS } from '../../scripts/generate-font'
 import type { FontName } from '@/types/config'
+import { buildFontContent, WEIGHTS } from '../../scripts/generate-font'
 
 // ── WEIGHTS ───────────────────────────────────────────────────────────────────
 
@@ -35,7 +35,7 @@ describe('WEIGHTS', () => {
   })
 
   it('variable fonts are not in WEIGHTS', () => {
-    // These are variable fonts — next/font handles weight automatically
+    // These are variable fonts - next/font handles weight automatically
     const variableFonts: FontName[] = [
       'Inter',
       'Geist',
