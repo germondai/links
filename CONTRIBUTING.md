@@ -28,12 +28,12 @@ bun run icons   # regenerate favicon + PWA icons without a full build
 
 `prebuild` runs two scripts in sequence:
 
-1. `scripts/generate-icons.ts` — downloads `profile.avatar` and resizes it to favicon sizes using `sharp` (bundled with Next.js, no extra install)
-2. `scripts/generate-font.ts` — reads `appearance.font` from your config and writes `src/lib/_font.ts` with a single `next/font/google` call for that font; Next.js downloads and self-hosts the font at build time
+1. `scripts/generate-icons.ts` - downloads `profile.avatar` and resizes it to favicon sizes using `sharp` (bundled with Next.js, no extra install)
+2. `scripts/generate-font.ts` - reads `appearance.font` from your config and writes `src/lib/_font.ts` with a single `next/font/google` call for that font; Next.js downloads and self-hosts the font at build time
 
 ## Code style
 
-We use **Biome** for linting and formatting — no ESLint, no Prettier.
+We use **Biome** for linting and formatting - no ESLint, no Prettier.
 
 ```sh
 bun run check:write   # auto-fix everything
@@ -75,9 +75,9 @@ Follow [Conventional Commits](https://conventionalcommits.org):
 ## Adding new fonts
 
 1. Add the key to the `FontName` union in `src/types/config.ts`
-2. Add a `FONT_FAMILY` entry in `src/lib/font-meta.ts` — map the key to the CSS font-family string (e.g. `Space_Grotesk → 'Space Grotesk'`)
+2. Add a `FONT_FAMILY` entry in `src/lib/font-meta.ts` - map the key to the CSS font-family string (e.g. `Space_Grotesk → 'Space Grotesk'`)
 3. If the font is **not variable** (i.e. requires explicit weights), add a `WEIGHTS` entry in `scripts/generate-font.ts`
-4. Rebuild — `scripts/generate-font.ts` picks up the new font key automatically
+4. Rebuild - `scripts/generate-font.ts` picks up the new font key automatically
 5. Update the fonts table in `README.md`
 
 ## Adding new themes
