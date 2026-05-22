@@ -1,8 +1,8 @@
 # @germondai/links
 
-Self-hostable personal link page — a FOSS alternative to Linktree. Single profile, no database, no auth, no dashboard. Everything lives in `links.config.ts`. Fork it, edit the config, deploy your own instance.
+Self-hostable personal link page - a FOSS alternative to Linktree. Single profile, no database, no auth, no dashboard. Everything lives in `links.config.ts`. Fork it, edit the config, deploy your own instance.
 
-Bun everywhere — no npm/npx/yarn/pnpm in scripts, Dockerfile, CI, or docs.
+Bun everywhere - no npm/npx/yarn/pnpm in scripts, Dockerfile, CI, or docs.
 
 ## Stack
 
@@ -40,7 +40,7 @@ Next.js 16 (App Router, React 19, Turbopack, standalone output), TypeScript 6 st
 │   │   ├── useFlare.ts
 │   │   └── useReducedMotion.ts
 │   ├── lib/
-│   │   ├── _font.ts             # auto-generated — do not edit
+│   │   ├── _font.ts             # auto-generated - do not edit
 │   │   ├── cn.ts
 │   │   ├── config.ts            # defaults + resolveConfig
 │   │   ├── font-meta.ts         # client-safe CSS family map for DevPanel
@@ -76,7 +76,7 @@ Next.js 16 (App Router, React 19, Turbopack, standalone output), TypeScript 6 st
 
 **Single config file.** All user-facing configuration goes in `links.config.ts`. Types are strict so editors give autocomplete and catch mistakes before build.
 
-**Font system.** `next/font/google` requires static, module-level calls that Turbopack can analyse. To support config-driven font selection, `scripts/generate-font.ts` runs as `prebuild` and writes `src/lib/_font.ts` with exactly one font call. 41 fonts available. Non-variable fonts (Roboto, Poppins, Lato, Barlow, IBM Plex Mono, Bebas Neue, Anton, DM Serif Display) need an explicit weight array. Fonts are self-hosted at build time — zero Google CDN at runtime. `font-meta.ts` is a separate client-safe map used by the DevPanel live picker.
+**Font system.** `next/font/google` requires static, module-level calls that Turbopack can analyse. To support config-driven font selection, `scripts/generate-font.ts` runs as `prebuild` and writes `src/lib/_font.ts` with exactly one font call. 41 fonts available. Non-variable fonts (Roboto, Poppins, Lato, Barlow, IBM Plex Mono, Bebas Neue, Anton, DM Serif Display) need an explicit weight array. Fonts are self-hosted at build time - zero Google CDN at runtime. `font-meta.ts` is a separate client-safe map used by the DevPanel live picker.
 
 **Icon generation.** `scripts/generate-icons.ts` downloads `profile.avatar` and resizes it to 4 WebP sizes via sharp. Falls back to a themed SVG circle when no avatar is set. `icon-colors.ts` derives accent and background colors directly from `THEMES` so they can never drift out of sync.
 
@@ -88,7 +88,7 @@ Next.js 16 (App Router, React 19, Turbopack, standalone output), TypeScript 6 st
 
 **Themes.** 15 built-in themes in `themes.ts`. Each has from/via/to gradient + accent/beam/particle tokens injected as CSS vars on `<body>`. `phantom` is the default personal theme matching germondai.com.
 
-**SEO.** JSON-LD ProfilePage + Person schema. `seo.mainSiteUrl` auto-derived by stripping the first subdomain from `canonicalUrl` (`deriveMainDomain` in `seo.ts`) — set explicitly for .co.uk / .com.au TLDs.
+**SEO.** JSON-LD ProfilePage + Person schema. `seo.mainSiteUrl` auto-derived by stripping the first subdomain from `canonicalUrl` (`deriveMainDomain` in `seo.ts`) - set explicitly for .co.uk / .com.au TLDs.
 
 ## Build pipeline
 

@@ -88,7 +88,7 @@ const config: LinksConfig = {
       // Sub-text shown below the button label (optional)
       description: 'My personal portfolio web',
 
-      // Optional short-URL slug — yourdomain.com/portfolio → this link's URL.
+      // Optional short-URL slug - yourdomain.com/portfolio → this link's URL.
       // Acts as a personal link shortener for any link, not just socials.
       // Lowercase letters, numbers and hyphens only. Leave unset to skip.
       // Socials always take priority if a slug clashes with a platform name.
@@ -139,7 +139,7 @@ const config: LinksConfig = {
     // Font family (optional, default: 'Inter').
     // The font is downloaded at build time, self-hosted locally, and served
     // with next/font fallback metrics (ascent/descent/size-adjust overrides)
-    // to prevent CLS — no Google CDN requests at runtime.
+    // to prevent CLS - no Google CDN requests at runtime.
     //
     // Available (41 fonts):
     //   Geometric sans:     Inter | Geist | Roboto | Montserrat | Urbanist |
