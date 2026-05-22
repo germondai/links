@@ -81,7 +81,7 @@ links: [
     description?: string   // sub-text below title
     style?: LinkStyle      // 'default' | 'pill' | 'outline' | 'neon'
     enabled?: boolean      // set false to hide without deleting
-    slug?: string          // optional short-URL — yourdomain.com/slug → this link
+    slug?: string          // optional short-URL - yourdomain.com/slug → this link
   }
 ]
 ```
@@ -278,10 +278,10 @@ Each self-hosted fork renders the OG image from its own config. The person's own
 
 15 built-in themes, each with a distinct gradient background and accent colour:
 
-| Theme        | Accent               | Vibe               |
-| ------------ | -------------------- | ------------------ |
-| `phantom`    | indigo `#5535d8`     | dark phantom       |
-| `aurora`     | violet `#7c3aed`     | purple nebula      |
+| Theme      | Accent               | Vibe          |
+| ---------- | -------------------- | ------------- |
+| `phantom`  | indigo `#5535d8`     | dark phantom  |
+| `aurora`   | violet `#7c3aed`     | purple nebula |
 | `midnight` | blue `#3b82f6`       | deep navy     |
 | `rose`     | pink `#f43f5e`       | soft rose     |
 | `emerald`  | teal-green `#10b981` | tropical      |
@@ -312,59 +312,59 @@ appearance: {
 
 **41 available fonts:**
 
-| Key                   | Family              | Category              |
-| --------------------- | ------------------- | --------------------- |
-| `Inter`               | Inter               | Geometric sans        |
-| `Geist`               | Geist               | Geometric sans        |
-| `Roboto`              | Roboto              | Geometric sans        |
-| `Montserrat`          | Montserrat          | Geometric sans        |
-| `Urbanist`            | Urbanist            | Geometric sans        |
-| `Hanken_Grotesk`      | Hanken Grotesk      | Geometric sans        |
-| `Bricolage_Grotesque` | Bricolage Grotesque | Geometric sans        |
-| `Poppins`             | Poppins             | Humanist sans         |
-| `Nunito`              | Nunito              | Humanist sans         |
-| `Nunito_Sans`         | Nunito Sans         | Humanist sans         |
-| `Raleway`             | Raleway             | Humanist sans         |
-| `Lato`                | Lato                | Humanist sans         |
-| `Open_Sans`           | Open Sans           | Humanist sans         |
-| `Cabin`               | Cabin               | Humanist sans         |
-| `Work_Sans`           | Work Sans           | Humanist sans         |
-| `Mulish`              | Mulish              | Humanist sans         |
-| `Quicksand`           | Quicksand           | Humanist sans         |
-| `Josefin_Sans`        | Josefin Sans        | Humanist sans         |
-| `Figtree`             | Figtree             | Humanist sans         |
-| `Manrope`             | Manrope             | Humanist sans         |
-| `DM_Sans`             | DM Sans             | Professional sans     |
-| `Outfit`              | Outfit              | Professional sans     |
-| `Plus_Jakarta_Sans`   | Plus Jakarta Sans   | Professional sans     |
-| `Rubik`               | Rubik               | Professional sans     |
-| `Lexend`              | Lexend              | Professional sans     |
-| `Space_Grotesk`       | Space Grotesk       | Techy / display sans  |
-| `Syne`                | Syne                | Techy / display sans  |
-| `Barlow`              | Barlow              | Techy / display sans  |
-| `Oxanium`             | Oxanium             | Techy / display sans  |
-| `JetBrains_Mono`      | JetBrains Mono      | Monospace             |
-| `Fira_Code`           | Fira Code           | Monospace             |
-| `IBM_Plex_Mono`       | IBM Plex Mono       | Monospace             |
-| `Source_Code_Pro`     | Source Code Pro     | Monospace             |
-| `Playfair_Display`    | Playfair Display    | Serif                 |
-| `Merriweather`        | Merriweather        | Serif                 |
-| `Lora`                | Lora                | Serif                 |
-| `EB_Garamond`         | EB Garamond         | Serif                 |
-| `Cormorant_Garamond`  | Cormorant Garamond  | Serif                 |
-| `DM_Serif_Display`    | DM Serif Display    | Serif                 |
-| `Bebas_Neue`          | Bebas Neue          | Display               |
-| `Anton`               | Anton               | Display               |
+| Key                   | Family              | Category             |
+| --------------------- | ------------------- | -------------------- |
+| `Inter`               | Inter               | Geometric sans       |
+| `Geist`               | Geist               | Geometric sans       |
+| `Roboto`              | Roboto              | Geometric sans       |
+| `Montserrat`          | Montserrat          | Geometric sans       |
+| `Urbanist`            | Urbanist            | Geometric sans       |
+| `Hanken_Grotesk`      | Hanken Grotesk      | Geometric sans       |
+| `Bricolage_Grotesque` | Bricolage Grotesque | Geometric sans       |
+| `Poppins`             | Poppins             | Humanist sans        |
+| `Nunito`              | Nunito              | Humanist sans        |
+| `Nunito_Sans`         | Nunito Sans         | Humanist sans        |
+| `Raleway`             | Raleway             | Humanist sans        |
+| `Lato`                | Lato                | Humanist sans        |
+| `Open_Sans`           | Open Sans           | Humanist sans        |
+| `Cabin`               | Cabin               | Humanist sans        |
+| `Work_Sans`           | Work Sans           | Humanist sans        |
+| `Mulish`              | Mulish              | Humanist sans        |
+| `Quicksand`           | Quicksand           | Humanist sans        |
+| `Josefin_Sans`        | Josefin Sans        | Humanist sans        |
+| `Figtree`             | Figtree             | Humanist sans        |
+| `Manrope`             | Manrope             | Humanist sans        |
+| `DM_Sans`             | DM Sans             | Professional sans    |
+| `Outfit`              | Outfit              | Professional sans    |
+| `Plus_Jakarta_Sans`   | Plus Jakarta Sans   | Professional sans    |
+| `Rubik`               | Rubik               | Professional sans    |
+| `Lexend`              | Lexend              | Professional sans    |
+| `Space_Grotesk`       | Space Grotesk       | Techy / display sans |
+| `Syne`                | Syne                | Techy / display sans |
+| `Barlow`              | Barlow              | Techy / display sans |
+| `Oxanium`             | Oxanium             | Techy / display sans |
+| `JetBrains_Mono`      | JetBrains Mono      | Monospace            |
+| `Fira_Code`           | Fira Code           | Monospace            |
+| `IBM_Plex_Mono`       | IBM Plex Mono       | Monospace            |
+| `Source_Code_Pro`     | Source Code Pro     | Monospace            |
+| `Playfair_Display`    | Playfair Display    | Serif                |
+| `Merriweather`        | Merriweather        | Serif                |
+| `Lora`                | Lora                | Serif                |
+| `EB_Garamond`         | EB Garamond         | Serif                |
+| `Cormorant_Garamond`  | Cormorant Garamond  | Serif                |
+| `DM_Serif_Display`    | DM Serif Display    | Serif                |
+| `Bebas_Neue`          | Bebas Neue          | Display              |
+| `Anton`               | Anton               | Display              |
 
 ### How it works
 
-`scripts/generate-font.ts` runs as part of `prebuild` before every build. It reads `appearance.font` and writes `src/lib/_font.ts` — a file with a single `next/font/google` call for that font.
+`scripts/generate-font.ts` runs as part of `prebuild` before every build. It reads `appearance.font` and writes `src/lib/_font.ts` - a file with a single `next/font/google` call for that font.
 
 At build time, `next/font/google`:
 
 - Downloads the font from Google Fonts **once**
-- Self-hosts it under `/_next/static/media/` — **no Google CDN requests at runtime**
-- Generates `@font-face` with `font-display: swap` plus fallback metric overrides (`ascent-override`, `descent-override`, `size-adjust`) to prevent layout shift — the same technique as [fontaine](https://github.com/unjs/fontaine) / [@nuxt/fonts](https://fonts.nuxt.com)
+- Self-hosts it under `/_next/static/media/` - **no Google CDN requests at runtime**
+- Generates `@font-face` with `font-display: swap` plus fallback metric overrides (`ascent-override`, `descent-override`, `size-adjust`) to prevent layout shift - the same technique as [fontaine](https://github.com/unjs/fontaine) / [@nuxt/fonts](https://fonts.nuxt.com)
 
 ### Live preview
 
@@ -388,7 +388,7 @@ yourdomain.com/discord   → your Discord URL  (302)
 yourdomain.com/instagram → your Instagram URL (302)
 ```
 
-`email` is excluded — `mailto:` can't be an HTTP redirect target.
+`email` is excluded - `mailto:` can't be an HTTP redirect target.
 
 ### Custom link slugs
 
@@ -407,15 +407,15 @@ links: [
     slug: 'gh',          // yourdomain.com/gh → github.com/germondai
   },
   {
-    title: 'Newsletter', // no slug — this link won't get a short route
+    title: 'Newsletter', // no slug - this link won't get a short route
     url: 'https://example.substack.com',
   },
 ]
 ```
 
-Slugs are optional per link — only the ones you set get a route. Lowercase letters, numbers and hyphens only. Social platform names always take priority if a slug clashes.
+Slugs are optional per link - only the ones you set get a route. Lowercase letters, numbers and hyphens only. Social platform names always take priority if a slug clashes.
 
-All routes are pre-generated as static redirects via `generateStaticParams` — no server logic at request time.
+All routes are pre-generated as static redirects via `generateStaticParams` - no server logic at request time.
 
 ---
 
