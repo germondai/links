@@ -84,7 +84,7 @@ export const metadata: Metadata = {
           { url: '/icon.webp', sizes: '32x32', type: 'image/webp' },
         ],
     apple: [{ url: faviconUrl ?? '/apple-touch-icon.webp', sizes: '180x180', type: 'image/webp' }],
-    shortcut: faviconUrl ?? '/favicon.ico',
+    shortcut: faviconUrl ?? '/icon.webp',
   },
   openGraph: {
     type: 'profile',

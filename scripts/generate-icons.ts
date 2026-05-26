@@ -15,7 +15,7 @@ const accentHex = appearance?.accentColor ?? ICON_ACCENTS[theme] ?? '#7c3aed'
 const bgHex = ICON_BG_COLORS[theme] ?? '#09090b'
 
 const TARGETS: [number, string][] = [
-  [32, 'src/app/icon.webp'],
+  [32,  'public/icon.webp'],
   [180, 'public/apple-touch-icon.webp'],
   [192, 'public/icon-192.webp'],
   [512, 'public/icon-512.webp'],
