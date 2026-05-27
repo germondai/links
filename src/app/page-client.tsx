@@ -3,8 +3,8 @@
 
 'use client'
 
+import dynamic from 'next/dynamic'
 import { useEffect } from 'react'
-import { DevPanel } from '@/components/dev/DevPanel'
 import { Background } from '@/components/effects/Background'
 import { EffectsLayer } from '@/components/effects/EffectsLayer'
 import { NoiseBg } from '@/components/effects/NoiseBg'
@@ -15,6 +15,9 @@ import { useConfigStore } from '@/store/config'
 import type { FontName } from '@/types/config'
 
 const isDev = process.env.NODE_ENV === 'development'
+const DevPanel = dynamic(() => import('@/components/dev/DevPanel').then((m) => m.DevPanel), {
+  ssr: false,
+})
 
 export const PageClient = () => {
   const resolved = useConfigStore((s) => s.resolved)
