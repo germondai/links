@@ -1,4 +1,11 @@
-# @germondai/links
+<h1 align="center">
+  <a href="https://github.com/germondai/links" target="_blank">
+    <img align="center" src="https://icons.germondai.com/icons?i=nextjs" /><br/><br/>
+    <span>Germond's Links</span>
+  </a>
+</h1>
+
+## **Welcome** to <a href="https://github.com/germondai/links" target="_blank">**Germond's Links**</a>! 👋
 
 > Your corner of the internet.
 
@@ -484,3 +491,10 @@ See [SECURITY.md](SECURITY.md) for vulnerability reporting.
 ## License
 
 [AGPL-3.0-or-later](https://www.gnu.org/licenses/agpl-3.0) © 2025 [germondai](https://github.com/germondai)
+
+---
+
+<p align="center">
+    <span>Made with ❤️ by</span>
+    <a href="https://github.com/germondai" target="_blank">@germondai</a>
+</p>
