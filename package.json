@@ -72,7 +72,6 @@
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "bun-types": "^1.3.14",
-    "critters": "^0.0.25",
     "husky": "^9.1.7",
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3"

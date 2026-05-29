@@ -17,7 +17,6 @@ const config: NextConfig = {
   serverExternalPackages: ['@takumi-rs/core'],
   experimental: {
     optimizePackageImports: ['framer-motion', 'lucide-react'],
-    optimizeCss: true,
   },
   headers: async () => {
     const isProd = process.env.NODE_ENV === 'production'
