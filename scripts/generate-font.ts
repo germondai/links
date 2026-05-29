@@ -9,7 +9,7 @@ import type { FontName } from '../src/types/config'
 // non-variable fonts need an explicit weight array
 export const WEIGHTS: Partial<Record<FontName, string[]>> = {
   Roboto: ['300', '400', '500', '700'],
-  Poppins: ['300', '400', '500', '600', '700'],
+  Poppins: ['400', '500', '600', '700'],
   Lato: ['300', '400', '700'],
   Barlow: ['300', '400', '500', '600', '700'],
   IBM_Plex_Mono: ['300', '400', '500', '700'],

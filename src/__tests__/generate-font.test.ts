@@ -13,7 +13,7 @@ describe('WEIGHTS', () => {
   })
 
   it('Poppins has expected weight array', () => {
-    expect(WEIGHTS.Poppins).toEqual(['300', '400', '500', '600', '700'])
+    expect(WEIGHTS.Poppins).toEqual(['400', '500', '600', '700'])
   })
 
   it('Lato has expected weight array', () => {

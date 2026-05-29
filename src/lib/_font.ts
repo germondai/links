@@ -12,6 +12,6 @@ import { Poppins } from 'next/font/google'
 const font = Poppins({
   subsets: ['latin'],
   variable: '--font-base',
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700'],
 })
 export default font
